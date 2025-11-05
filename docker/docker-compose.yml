@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  focusguard-bot:
+    build: .
+    environment:
+      - MAX_BOT_TOKEN=${MAX_BOT_TOKEN}
+    restart: unless-stopped
